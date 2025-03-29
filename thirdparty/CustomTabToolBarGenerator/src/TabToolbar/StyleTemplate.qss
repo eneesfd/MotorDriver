@@ -1,0 +1,84 @@
+QToolBar[TabToolbar="true"] {
+    border: 0px;
+    background-color: #202020; /* Koyu gri arkaplan */
+    padding: 0px;
+}
+
+QToolButton[TTHide="true"] {
+    color: #c0c0c0; /* Açık gri metin rengi */
+}
+
+QScrollArea {
+    padding: 0px;
+}
+
+QWidget[TTPage="true"] {
+    padding: 0px;
+    background-color: #555555; /* Daha koyu gri */
+    border: 0px;
+    border-top: 1px solid #303030;
+}
+
+QTabWidget[TTWidget="true"] {
+    background-color: transparent;
+}
+
+QTabWidget[TTWidget="true"]::pane {
+    border-radius: 0px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    top: 1px;
+    border-bottom: 1px solid #303030;
+}
+
+QTabWidget[TTWidget="true"]::tab-bar {
+    top: 2px;
+    background-color: transparent;
+    margin-left: 50px;
+}
+
+QTabBar[TTTab="true"] {
+    background-color: transparent;
+}
+
+QTabBar[TTTab="true"]::tab {
+    margin-right: 20px; /* Tablar arası boşluk 20px olarak ayarlandı */
+    font-family: "DejaVu Sans Condensed";
+    color: #c0c0c0; /* Açık gri metin */
+    background-color: transparent;
+    padding-left: 10px; /* Yazıyı tab içinde sağa kaydır */
+    padding-right: 10px; /* Yazıyı tab içinde sola kaydır */
+    min-height: 30px;
+}
+
+QTabBar[TTTab="true"]::tab::selected::enabled {
+    padding-top: 1px;
+    border-top: 0px solid transparent;
+    border-left: 0px solid #505050;
+    border-right: 0px solid #505050;
+    border-bottom: 2px solid #FFD700; /* Çizgi alt tarafa taşındı ve düz hale getirildi */
+    background-color: transparent; /* Arkaplan kaldırıldı */
+    color: #FFD700;
+}
+
+QTabBar[TTTab="true"]::tab::hover::enabled {
+    color: #FFD700;
+    background-color: #404040;
+    border-bottom: 2px solid #FFD700;
+}
+
+QFrame[TTSeparator="true"] {
+    border: 1px solid transparent;
+    border-right-color: #505050;
+}
+
+QLabel[TTGroupName="true"] {
+    color: #FFD700;
+}
+
+QFrame[TTHorizontalFrame="true"] {
+    border-radius: 5px;
+    border: 1px solid #505050;
+    background-color: #181818;
+}

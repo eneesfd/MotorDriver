@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DriveSetupAndMotion</class>
+ <widget class="QWidget" name="DriveSetupAndMotion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_35">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stckwgtDriveSetupAndMotion">
+     <property name="frameShape">
+      <enum>QFrame::Shape::NoFrame</enum>
+     </property>
+     <widget class="QWidget" name="pageTuning">
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="PanelHeader" name="wgtPanelHeader" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QStackedWidget" name="stckwgtPageNavigator">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>350</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="pageQuickTuning">
+                <layout class="QGridLayout" name="gridLayout_34">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QTreeWidget" name="treewgtQuickTuning">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>350</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="rootIsDecorated">
+                      <bool>true</bool>
+                     </property>
+                     <property name="animated">
+                      <bool>true</bool>
+                     </property>
+                     <property name="allColumnsShowFocus">
+                      <bool>false</bool>
+                     </property>
+                     <attribute name="headerVisible">
+                      <bool>false</bool>
+                     </attribute>
+                     <column>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </column>
+                     <item>
+                      <property name="text">
+                       <string>Axis Configurations</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Motor and Feedback</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Motor Settings</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>9</pointsize>
+                        </font>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Feedback Settings</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>9</pointsize>
+                        </font>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Application Settings</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Brake</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Automatic Tuning</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                     <item>
+                      <spacer name="horizontalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Horizontal</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Fixed</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>100</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnDecreaseQuickTuning">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>60</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>60</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>&lt;&lt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnIncreaseIndexQuickTuning">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>60</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>60</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>&gt;&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_2">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Horizontal</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Fixed</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>100</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pageExpertTuning">
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QTreeWidget" name="treewgtExpertTuning">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>200</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>350</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="rootIsDecorated">
+                      <bool>true</bool>
+                     </property>
+                     <property name="animated">
+                      <bool>true</bool>
+                     </property>
+                     <property name="allColumnsShowFocus">
+                      <bool>false</bool>
+                     </property>
+                     <attribute name="headerVisible">
+                      <bool>false</bool>
+                     </attribute>
+                     <column>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </column>
+                     <item>
+                      <property name="text">
+                       <string>Axis Configurations</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Functional Safety</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>SafetyIO Configuration</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Motor and Feedback</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Motor Settings</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>9</pointsize>
+                        </font>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Feedback Settings</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>9</pointsize>
+                        </font>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>User Units</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Drive User Units</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Display User Units</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Limits and Protections</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Current Limits</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Motion Limits and Modulo</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Protections</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Stopping Options</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Application Settings</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Brake</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Setting Window</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Inputs and Outputs</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Current</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Identification</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Design</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verification - Time</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Commutation</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Stepper Closed Loop</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Gantry Yaw</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Identifcation</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Design</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Velocity and Position</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Identification</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Design</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Scheduling</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Verification - Time</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Safety</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>Enabling Device</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Validation</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Acceptance</string>
+                       </property>
+                      </item>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Summary</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Automatic Tuning</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_3">
+                     <item>
+                      <spacer name="horizontalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Horizontal</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Fixed</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>100</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnDecreaseExpertTuning">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>60</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>60</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>&lt;&lt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="btnIncreaseExpertTuning">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>60</width>
+                         <height>25</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>60</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>&gt;&gt;</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_4">
+                       <property name="orientation">
+                        <enum>Qt::Orientation::Horizontal</enum>
+                       </property>
+                       <property name="sizeType">
+                        <enum>QSizePolicy::Policy::Fixed</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>100</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QStackedWidget" name="stckwgtDriveSetupAndMotionPages">
+             <property name="minimumSize">
+              <size>
+               <width>700</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::NoFrame</enum>
+             </property>
+             <property name="currentIndex">
+              <number>24</number>
+             </property>
+             <widget class="QWidget" name="pageAxisConfiguration">
+              <layout class="QGridLayout" name="gridLayout_2">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="AxisConfiguration" name="wgtPpageAxisConfiguration" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageFunctionalSafety">
+              <layout class="QGridLayout" name="gridLayout_8">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="FunctionalSafety" name="wgtPageFunctionalSafety" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageSafetyIOConfiguration">
+              <layout class="QGridLayout" name="gridLayout_9">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="SafetyIOConfiguration" name="wgtPageSafetyIOConfiguration" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageMotorSettings">
+              <layout class="QGridLayout" name="gridLayout_6">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="MotorSettings" name="wgtPageMotorSettings" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageFeedbackSettings">
+              <layout class="QGridLayout" name="gridLayout_3">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="FeedbackSettings" name="wgtPageFeedbackSettings" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageDriveUserUnits">
+              <layout class="QGridLayout" name="gridLayout_10">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="DriveUserUnits" name="wgtPageDriveUserUnits" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageDisplayUserUnits">
+              <layout class="QGridLayout" name="gridLayout_11">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="DisplayUserUnits" name="wgtPageDisplayUserUnits" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageCurrentLimits">
+              <layout class="QGridLayout" name="gridLayout_12">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="CurrentLimits" name="wgtPageCurrentLimits" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageMotionsLimitsAndModulo">
+              <layout class="QGridLayout" name="gridLayout_13">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="MotionLimitsAndModulo" name="wgtPageMotionsLimitsAndModulo" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageProtections">
+              <layout class="QGridLayout" name="gridLayout_14">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Protections" name="wgtPageProtections" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageStoppingOptions">
+              <layout class="QGridLayout" name="gridLayout_15">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="StoppingOptions" name="wgtPageStoppingOptions" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageBrake">
+              <layout class="QGridLayout" name="gridLayout_4">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Brake" name="wgtPageBrake" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageSettingWindow">
+              <layout class="QGridLayout" name="gridLayout_16">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="SettingWindow" name="wgtPageSettingWindow" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageApplicationSettingsInputsAndOutputs">
+              <layout class="QGridLayout" name="gridLayout_17">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="InputAndOutputs" name="wgtPageApplicationSettingsInputsAndOutputs" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageCurrentIdentifcation">
+              <layout class="QGridLayout" name="gridLayout_18">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="CurrentIdentification" name="wgtpageCurrentIdentifcation" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageCurrentDesign">
+              <layout class="QGridLayout" name="gridLayout_19">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="CurrentDesign" name="wgtPageCurrentDesign" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageCurrentVerificationTime">
+              <layout class="QGridLayout" name="gridLayout_20">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="CurrentVerificationTime" name="wgtPageCurrentVerificationTime" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageCommutation">
+              <layout class="QGridLayout" name="gridLayout_21">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Comutation" name="wgtPageCommutation" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageStepperClosedLoop">
+              <layout class="QGridLayout" name="gridLayout_22">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="StepperClosedLoop" name="wgtPageStepperClosedLoop" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageGantryYawIdentifcation">
+              <layout class="QGridLayout" name="gridLayout_23">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="GantryYawIdentification" name="wgtPageGantryYawIdentifcation" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageGantryYawDesign">
+              <layout class="QGridLayout" name="gridLayout_24">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="GantryYawDesign" name="wgtPageGantryYawDesign" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageVelocityAndPositionIdentifcation">
+              <layout class="QGridLayout" name="gridLayout_25">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="VelocityAndPositionIdentification" name="wgtPageVelocityAndPositionIdentifcation" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageVelocityAndPositionDesign">
+              <layout class="QGridLayout" name="gridLayout_26">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="VelocityAndPositionDesign" name="wgtPageVelocityAndPositionDesign" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageVelocityAndPositonScheduling">
+              <layout class="QGridLayout" name="gridLayout_27">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Scheduling" name="wgtPageVelocityAndPositonScheduling" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageVelocityAndPositionVerifcationTime">
+              <layout class="QGridLayout" name="gridLayout_28">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="VelocityAndPositionVerificationTime" name="wgtPageVelocityAndPositionVerifcationTime" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageSafetyEnablingDevice">
+              <layout class="QGridLayout" name="gridLayout_29">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="EnableDevice" name="wgtPageSafetyEnablingDevice" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageSafetyValidation">
+              <layout class="QGridLayout" name="gridLayout_30">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Validation" name="wgtPageSafetyValidation" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageSafetyAcceptance">
+              <layout class="QGridLayout" name="gridLayout_31">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Acceptance" name="wgtPageSafetyAcceptance" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageSummary">
+              <layout class="QGridLayout" name="gridLayout_32">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="Summary" name="wgtPageSummary" native="true"/>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="pageAutomaticTuning">
+              <layout class="QGridLayout" name="gridLayout_5">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="AutomaticTuning" name="wgtpageAutomaticTuning" native="true"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageMotionSingleAxis">
+      <layout class="QGridLayout" name="gridLayout_33">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="MotionSingleAxis" name="wgtPageMotionSingleAxis" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PanelHeader</class>
+   <extends>QWidget</extends>
+   <header>PanelHeader.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FeedbackSettings</class>
+   <extends>QWidget</extends>
+   <header>FeedbackSettings.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Brake</class>
+   <extends>QWidget</extends>
+   <header>Brake.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MotorSettings</class>
+   <extends>QWidget</extends>
+   <header>MotorSettings.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FunctionalSafety</class>
+   <extends>QWidget</extends>
+   <header>FunctionalSafety.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SafetyIOConfiguration</class>
+   <extends>QWidget</extends>
+   <header>SafetyIOConfiguration.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DriveUserUnits</class>
+   <extends>QWidget</extends>
+   <header>DriveUserUnits.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DisplayUserUnits</class>
+   <extends>QWidget</extends>
+   <header>DisplayUserUnits.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CurrentLimits</class>
+   <extends>QWidget</extends>
+   <header>CurrentLimits.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MotionLimitsAndModulo</class>
+   <extends>QWidget</extends>
+   <header>MotionLimitsAndModulo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Protections</class>
+   <extends>QWidget</extends>
+   <header>Protections.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StoppingOptions</class>
+   <extends>QWidget</extends>
+   <header>StoppingOptions.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SettingWindow</class>
+   <extends>QWidget</extends>
+   <header>SettingWindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CurrentIdentification</class>
+   <extends>QWidget</extends>
+   <header>CurrentIdentification.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CurrentDesign</class>
+   <extends>QWidget</extends>
+   <header>CurrentDesign.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CurrentVerificationTime</class>
+   <extends>QWidget</extends>
+   <header>CurrentVerificationTime.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Comutation</class>
+   <extends>QWidget</extends>
+   <header>Comutation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StepperClosedLoop</class>
+   <extends>QWidget</extends>
+   <header>StepperClosedLoop.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GantryYawIdentification</class>
+   <extends>QWidget</extends>
+   <header>GantryYawIdentification.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GantryYawDesign</class>
+   <extends>QWidget</extends>
+   <header>GantryYawDesign.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VelocityAndPositionIdentification</class>
+   <extends>QWidget</extends>
+   <header>VelocityAndPositionIdentification.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VelocityAndPositionDesign</class>
+   <extends>QWidget</extends>
+   <header>VelocityAndPositionDesign.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Scheduling</class>
+   <extends>QWidget</extends>
+   <header>Scheduling.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VelocityAndPositionVerificationTime</class>
+   <extends>QWidget</extends>
+   <header>VelocityAndPositionVerificationTime.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EnableDevice</class>
+   <extends>QWidget</extends>
+   <header>EnableDevice.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Validation</class>
+   <extends>QWidget</extends>
+   <header>Validation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Acceptance</class>
+   <extends>QWidget</extends>
+   <header>Acceptance.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Summary</class>
+   <extends>QWidget</extends>
+   <header>Summary.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>InputAndOutputs</class>
+   <extends>QWidget</extends>
+   <header>InputAndOutputs.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AutomaticTuning</class>
+   <extends>QWidget</extends>
+   <header>AutomaticTuning.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AxisConfiguration</class>
+   <extends>QWidget</extends>
+   <header>AxisConfiguration.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MotionSingleAxis</class>
+   <extends>QWidget</extends>
+   <header>MotionSingleAxis.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TabToolMenuBar</class>
+ <widget class="QWidget" name="TabToolMenuBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>140</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>140</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </item>
+  </layout>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/Help-browser.png</normaloff>:/icons/icons/Help-browser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionDummy">
+   <property name="text">
+    <string>dummy</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/48px-Document-save-as.png</normaloff>:/icons/icons/48px-Document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>SaveAs</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/48px-Document-open.png</normaloff>:/icons/icons/48px-Document-open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionScale">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/Scale.png</normaloff>:/icons/icons/Scale.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scale</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionPolypaint">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/48px-Polypaint.png</normaloff>:/icons/icons/48px-Polypaint.png</iconset>
+   </property>
+   <property name="text">
+    <string>Polypaint</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/48px-Preferences-system.png</normaloff>:/icons/icons/48px-Preferences-system.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/redo.svg</normaloff>:/actionsIcons/actionsIcons/redo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/undo.svg</normaloff>:/actionsIcons/actionsIcons/undo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/close.png</normaloff>:/icons/icons/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/48px-Document-save.png</normaloff>:/icons/icons/48px-Document-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionUndoAll">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/revert_all.svg</normaloff>:/actionsIcons/actionsIcons/revert_all.svg</iconset>
+   </property>
+   <property name="text">
+    <string>UndoAll</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionApply">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/apply.svg</normaloff>:/actionsIcons/actionsIcons/apply.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionApplyAll">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/apply_all.svg</normaloff>:/actionsIcons/actionsIcons/apply_all.svg</iconset>
+   </property>
+   <property name="text">
+    <string>ApplyAll</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionRedoAll">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/redo_all.svg</normaloff>:/actionsIcons/actionsIcons/redo_all.svg</iconset>
+   </property>
+   <property name="text">
+    <string>RedoAll</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGetParameters">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyParameters.svg</normaloff>:/icons/icons/DummyParameters.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSendParameters">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyParameters.svg</normaloff>:/icons/icons/DummyParameters.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGetTextual">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyFileIcon.svg</normaloff>:/icons/icons/DummyFileIcon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Textual</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSendTextual">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyFileIcon.svg</normaloff>:/icons/icons/DummyFileIcon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Textual</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGetBinary">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyFileIcon.svg</normaloff>:/icons/icons/DummyFileIcon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Binary</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSnedBinary">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyFileIcon.svg</normaloff>:/icons/icons/DummyFileIcon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Binary</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/DummyFileIcon.svg</normaloff>:/icons/icons/DummyFileIcon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGetUpload">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/WorkspaceParametersDownload.svg</normaloff>:/icons/icons/WorkspaceParametersDownload.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSendUpload">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/icons/icons/WorkspaceParametersUpload.svg</normaloff>:/icons/icons/WorkspaceParametersUpload.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Donwload</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/connect.png</normaloff>:/actionsIcons/actionsIcons/Dummy/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/disconnect.png</normaloff>:/actionsIcons/actionsIcons/Dummy/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConnectGateways">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/gatewaysnokta.png</normaloff>:/actionsIcons/actionsIcons/Dummy/gatewaysnokta.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gateways</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDisconnectGateways">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/gatawaysremove.png</normaloff>:/actionsIcons/actionsIcons/Dummy/gatawaysremove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gateways</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveWorkspace">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/save.png</normaloff>:/actionsIcons/actionsIcons/Dummy/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOpenWorkspace">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/openworkspace.png</normaloff>:/actionsIcons/actionsIcons/Dummy/openworkspace.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveAsWorkspace">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/saveworkspace.png</normaloff>:/actionsIcons/actionsIcons/Dummy/saveworkspace.png</iconset>
+   </property>
+   <property name="text">
+    <string>SaveAsWorkspace</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionNewWorkspace">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/worksapecestar.png</normaloff>:/actionsIcons/actionsIcons/Dummy/worksapecestar.png</iconset>
+   </property>
+   <property name="text">
+    <string>NewWorkspace</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionClearWorkspace">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/removeworkspace.png</normaloff>:/actionsIcons/actionsIcons/Dummy/removeworkspace.png</iconset>
+   </property>
+   <property name="text">
+    <string>ClearWorkspace</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionZipAndSendWorkspace">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/zip.png</normaloff>:/actionsIcons/actionsIcons/Dummy/zip.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zip &amp; Send</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddGoldDrive">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddGoldDrive</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddPlatiniumDrive">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddPlatiniumDrive</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddSimpleIQDrive">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddSimpleIQDrive</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddTitaniumDrive">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddTitaniumDrive</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddGoldCanMaestro">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddGoldCanMaestro</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddPlatiniumCanMaestro">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddPlatiniumCanMaestro</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddTitaniumCanMaestro">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddTitaniumCanMaestro</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddGoldEthercatMaestro">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddGoldEthercatMaestro</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddPlatiniumEthercatMaestro">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddPlatiniumEthercatMaestro</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddTitaniumEthercatMaestro">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addgold.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddTitaniumEthercatMaestro</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddDriveGatewayConnection">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/adddrivegateway.png</normaloff>:/actionsIcons/actionsIcons/Dummy/adddrivegateway.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddDriveGatewayConnection</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddStaticRoute">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/staticroute.png</normaloff>:/actionsIcons/actionsIcons/Dummy/staticroute.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddStaticRoute</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOpenDriveLocater">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/opendrivelocater.png</normaloff>:/actionsIcons/actionsIcons/Dummy/opendrivelocater.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenDriveLocater</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionUpdateHostIP">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/updatehost.png</normaloff>:/actionsIcons/actionsIcons/Dummy/updatehost.png</iconset>
+   </property>
+   <property name="text">
+    <string>UpdateHostIP</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSendUser_File">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/userfilemaestro.png</normaloff>:/actionsIcons/actionsIcons/Dummy/userfilemaestro.png</iconset>
+   </property>
+   <property name="text">
+    <string>User File</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGetUser_File">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/userfile.png</normaloff>:/actionsIcons/actionsIcons/Dummy/userfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>User File</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMaestroFirmware">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/firmware.png</normaloff>:/actionsIcons/actionsIcons/Dummy/firmware.png</iconset>
+   </property>
+   <property name="text">
+    <string>Firmware</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionPersonality">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/personility.png</normaloff>:/actionsIcons/actionsIcons/Dummy/personility.png</iconset>
+   </property>
+   <property name="text">
+    <string>Personality</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDriveFirmware">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/firmwaredrive.png</normaloff>:/actionsIcons/actionsIcons/Dummy/firmwaredrive.png</iconset>
+   </property>
+   <property name="text">
+    <string>Firmware</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDownloadPAL">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/pal.png</normaloff>:/actionsIcons/actionsIcons/Dummy/pal.png</iconset>
+   </property>
+   <property name="text">
+    <string>PAL</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSIL">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/sil.png</normaloff>:/actionsIcons/actionsIcons/Dummy/sil.png</iconset>
+   </property>
+   <property name="text">
+    <string>SIL</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/remove.png</normaloff>:/actionsIcons/actionsIcons/Dummy/remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConfigureDonwload">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/configure.png</normaloff>:/actionsIcons/actionsIcons/Dummy/configure.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionImportDonwloadSettings">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/import.png</normaloff>:/actionsIcons/actionsIcons/Dummy/import.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExportDownloadSettings">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/exportDownload.png</normaloff>:/actionsIcons/actionsIcons/Dummy/exportDownload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDownloadWorkspaceFiles">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/download.png</normaloff>:/actionsIcons/actionsIcons/Dummy/download.png</iconset>
+   </property>
+   <property name="text">
+    <string>Download</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTerminal">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/terminal.png</normaloff>:/actionsIcons/actionsIcons/Dummy/terminal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Terminal</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionControl_Paramters">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/controlparams.png</normaloff>:/actionsIcons/actionsIcons/Dummy/controlparams.png</iconset>
+   </property>
+   <property name="text">
+    <string>Control Paramters</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDrive_Motion">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/drivemotion.png</normaloff>:/actionsIcons/actionsIcons/Dummy/drivemotion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Drive Motion</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMulti_Axis_Motion">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/multiaxismotion.png</normaloff>:/actionsIcons/actionsIcons/Dummy/multiaxismotion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Multi Axis Motion</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStatus_Monitor">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/statusmonitor.png</normaloff>:/actionsIcons/actionsIcons/Dummy/statusmonitor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Status Monitor</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionApplication_Tools">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/applicationtools.png</normaloff>:/actionsIcons/actionsIcons/Dummy/applicationtools.png</iconset>
+   </property>
+   <property name="text">
+    <string>Application Tools</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSafety_Monitoring">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/safetymonitoring.png</normaloff>:/actionsIcons/actionsIcons/Dummy/safetymonitoring.png</iconset>
+   </property>
+   <property name="text">
+    <string>Safety Monitoring</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRecorder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/recorder.png</normaloff>:/actionsIcons/actionsIcons/Dummy/recorder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recorder</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionE_CAT_Diag">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/ecat.png</normaloff>:/actionsIcons/actionsIcons/Dummy/ecat.png</iconset>
+   </property>
+   <property name="text">
+    <string>E-CAT Diag</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMaestro_Configurator">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/maestroconf.png</normaloff>:/actionsIcons/actionsIcons/Dummy/maestroconf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Maestro Configurator</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionModbus">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/modbus.png</normaloff>:/actionsIcons/actionsIcons/Dummy/modbus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Modbus</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMaestro_Motion">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/maestromotion.png</normaloff>:/actionsIcons/actionsIcons/Dummy/maestromotion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Maestro Motion</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMaestro_Event_Logger">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/maestroeventlogger.png</normaloff>:/actionsIcons/actionsIcons/Dummy/maestroeventlogger.png</iconset>
+   </property>
+   <property name="text">
+    <string>Maestro Event Logger</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStatus_Viewer">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/statusviewer.png</normaloff>:/actionsIcons/actionsIcons/Dummy/statusviewer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Status Viewer</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGroup_Motion">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/groupmotion.png</normaloff>:/actionsIcons/actionsIcons/Dummy/groupmotion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Group Motion</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMaestro_Browser">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/maestrobrowser.png</normaloff>:/actionsIcons/actionsIcons/Dummy/maestrobrowser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Maestro Browser</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDrive_Load">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/driveloadset.png</normaloff>:/actionsIcons/actionsIcons/Dummy/driveloadset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Drive Load</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDrive_Save">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/drivesave.png</normaloff>:/actionsIcons/actionsIcons/Dummy/drivesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Drive Save</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/reset.png</normaloff>:/actionsIcons/actionsIcons/Dummy/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionForce_Upload">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/ParametersSetpng.png</normaloff>:/actionsIcons/actionsIcons/Dummy/ParametersSetpng.png</iconset>
+   </property>
+   <property name="text">
+    <string>Force Upload</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionForce_Download">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/ParametersGetpng.png</normaloff>:/actionsIcons/actionsIcons/Dummy/ParametersGetpng.png</iconset>
+   </property>
+   <property name="text">
+    <string>Force Download</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionImport_Page_Parameters">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/importpageparams.png</normaloff>:/actionsIcons/actionsIcons/Dummy/importpageparams.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import Page Parameters</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExport_Page_Parameters">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/exportpageparams.png</normaloff>:/actionsIcons/actionsIcons/Dummy/exportpageparams.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export Page Parameters</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOpenRecording">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/recordingopen.png</normaloff>:/actionsIcons/actionsIcons/Dummy/recordingopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveRecording">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/recordingsave.png</normaloff>:/actionsIcons/actionsIcons/Dummy/recordingsave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSave_AsRecorder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/recordingsaveas.png</normaloff>:/actionsIcons/actionsIcons/Dummy/recordingsaveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTrigger">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/trigger.png</normaloff>:/actionsIcons/actionsIcons/Dummy/trigger.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trigger...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSignals">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/signals.png</normaloff>:/actionsIcons/actionsIcons/Dummy/signals.png</iconset>
+   </property>
+   <property name="text">
+    <string>Signals...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionInterval">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/interval.png</normaloff>:/actionsIcons/actionsIcons/Dummy/interval.png</iconset>
+   </property>
+   <property name="text">
+    <string>Interval...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStartRecorder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/start.png</normaloff>:/actionsIcons/actionsIcons/Dummy/start.png</iconset>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionImmediate">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/start.png</normaloff>:/actionsIcons/actionsIcons/Dummy/start.png</iconset>
+   </property>
+   <property name="text">
+    <string>Immediate</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionUploadRecorder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/upload.png</normaloff>:/actionsIcons/actionsIcons/Dummy/upload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStopRecorder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/stop.png</normaloff>:/actionsIcons/actionsIcons/Dummy/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLoadSettings">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/recorderingsettingsload.png</normaloff>:/actionsIcons/actionsIcons/Dummy/recorderingsettingsload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Load...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveSettings">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/recorderingsettingssave.png</normaloff>:/actionsIcons/actionsIcons/Dummy/recorderingsettingssave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionGenerate_Code">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/generatecode.png</normaloff>:/actionsIcons/actionsIcons/Dummy/generatecode.png</iconset>
+   </property>
+   <property name="text">
+    <string>Generate Code</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionManage">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/managedrivers.png</normaloff>:/actionsIcons/actionsIcons/Dummy/managedrivers.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manage...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSaveCurrentRecoder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/settingsperesentsave.png</normaloff>:/actionsIcons/actionsIcons/Dummy/settingsperesentsave.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionApplyCurrentRecoder">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/apply.png</normaloff>:/actionsIcons/actionsIcons/Dummy/apply.png</iconset>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionManage_Drivers">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/managedrivers.png</normaloff>:/actionsIcons/actionsIcons/Dummy/managedrivers.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manage Drivers...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRemoveSelectedDrvies">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/trash.png</normaloff>:/actionsIcons/actionsIcons/Dummy/trash.png</iconset>
+   </property>
+   <property name="text">
+    <string>RemoveSelectedDrvies</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRemoveAllDrive">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/trashdouble.png</normaloff>:/actionsIcons/actionsIcons/Dummy/trashdouble.png</iconset>
+   </property>
+   <property name="text">
+    <string>RemoveAllDrive</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionProperties">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/properties.png</normaloff>:/actionsIcons/actionsIcons/Dummy/properties.png</iconset>
+   </property>
+   <property name="text">
+    <string>Properties...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionViewer">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/viewer.png</normaloff>:/actionsIcons/actionsIcons/Dummy/viewer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Viewer</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionPropertiesChart">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/propertiesviewdesign.png</normaloff>:/actionsIcons/actionsIcons/Dummy/propertiesviewdesign.png</iconset>
+   </property>
+   <property name="text">
+    <string>Properties</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionChart_Editor">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/carteditor.png</normaloff>:/actionsIcons/actionsIcons/Dummy/carteditor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Chart Editor</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionFile_Editor">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/fileeditor.png</normaloff>:/actionsIcons/actionsIcons/Dummy/fileeditor.png</iconset>
+   </property>
+   <property name="text">
+    <string>File Editor</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/clear.png</normaloff>:/actionsIcons/actionsIcons/Dummy/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionZoom_XY">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/zoomxy.png</normaloff>:/actionsIcons/actionsIcons/Dummy/zoomxy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom XY</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionZoom_X">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/zoomx.png</normaloff>:/actionsIcons/actionsIcons/Dummy/zoomx.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom X</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionZoom_Y">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/zoomy.png</normaloff>:/actionsIcons/actionsIcons/Dummy/zoomy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom Y</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionManual_Zoom">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/manuelzoom.png</normaloff>:/actionsIcons/actionsIcons/Dummy/manuelzoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manual Zoom</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTo_Markers">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/tomarkers.png</normaloff>:/actionsIcons/actionsIcons/Dummy/tomarkers.png</iconset>
+   </property>
+   <property name="text">
+    <string>To Markers</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionZoom_Out">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/zoomout.png</normaloff>:/actionsIcons/actionsIcons/Dummy/zoomout.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom Out</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionUnzoom">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/unzoom.png</normaloff>:/actionsIcons/actionsIcons/Dummy/unzoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Unzoom</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionUnzoomAll">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/unzoomall.png</normaloff>:/actionsIcons/actionsIcons/Dummy/unzoomall.png</iconset>
+   </property>
+   <property name="text">
+    <string>UnzoomAll</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMove_Left">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/left.png</normaloff>:/actionsIcons/actionsIcons/Dummy/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move Left</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMove_Right">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/right.png</normaloff>:/actionsIcons/actionsIcons/Dummy/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move Right</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStatistic">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/statistic.png</normaloff>:/actionsIcons/actionsIcons/Dummy/statistic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Statistic</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMinimum">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/minimum.png</normaloff>:/actionsIcons/actionsIcons/Dummy/minimum.png</iconset>
+   </property>
+   <property name="text">
+    <string>Minimum</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMaximum">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/maximum.png</normaloff>:/actionsIcons/actionsIcons/Dummy/maximum.png</iconset>
+   </property>
+   <property name="text">
+    <string>Maximum</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAverage">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/average.png</normaloff>:/actionsIcons/actionsIcons/Dummy/average.png</iconset>
+   </property>
+   <property name="text">
+    <string>Average</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExtrac_Bit">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/extractbit.png</normaloff>:/actionsIcons/actionsIcons/Dummy/extractbit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Extrac Bit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMask">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/mask.png</normaloff>:/actionsIcons/actionsIcons/Dummy/mask.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mask</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionIntegrate">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/integral.png</normaloff>:/actionsIcons/actionsIcons/Dummy/integral.png</iconset>
+   </property>
+   <property name="text">
+    <string>Integrate</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAddSubtract">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/addandsub.png</normaloff>:/actionsIcons/actionsIcons/Dummy/addandsub.png</iconset>
+   </property>
+   <property name="text">
+    <string>AddSubtract</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionMultiplyDivide">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/multiply.png</normaloff>:/actionsIcons/actionsIcons/Dummy/multiply.png</iconset>
+   </property>
+   <property name="text">
+    <string>MultiplyDivide</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStepAnalysis">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/stepanal.png</normaloff>:/actionsIcons/actionsIcons/Dummy/stepanal.png</iconset>
+   </property>
+   <property name="text">
+    <string>StepAnalysis</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionFFT_Signal">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/fftsignal.png</normaloff>:/actionsIcons/actionsIcons/Dummy/fftsignal.png</iconset>
+   </property>
+   <property name="text">
+    <string>FFT Signal</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDifferent">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/differantie.png</normaloff>:/actionsIcons/actionsIcons/Dummy/differantie.png</iconset>
+   </property>
+   <property name="text">
+    <string>Different</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSecondDifferent">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/seconddifferantie.png</normaloff>:/actionsIcons/actionsIcons/Dummy/seconddifferantie.png</iconset>
+   </property>
+   <property name="text">
+    <string>SecondDifferent</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAbsolute_Value">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/absulute.png</normaloff>:/actionsIcons/actionsIcons/Dummy/absulute.png</iconset>
+   </property>
+   <property name="text">
+    <string>Absolute Value</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionCalculator">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/calculator.png</normaloff>:/actionsIcons/actionsIcons/Dummy/calculator.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calculator</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionReset_Axis">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/reset.png</normaloff>:/actionsIcons/actionsIcons/Dummy/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset Axis</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionReboot">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/reboot.png</normaloff>:/actionsIcons/actionsIcons/Dummy/reboot.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reboot</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOne_Column">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/oneColumn.png</normaloff>:/actionsIcons/actionsIcons/Dummy/oneColumn.png</iconset>
+   </property>
+   <property name="text">
+    <string>One Column</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTwo_Column">
+   <property name="icon">
+    <iconset resource="../../../resources/resource.qrc">
+     <normaloff>:/actionsIcons/actionsIcons/Dummy/twoColumn.png</normaloff>:/actionsIcons/actionsIcons/Dummy/twoColumn.png</iconset>
+   </property>
+   <property name="text">
+    <string>Two Column</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../resources/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
